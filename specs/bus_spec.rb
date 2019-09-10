@@ -40,13 +40,13 @@
     assert_equal([], @bus.passengers)
   end
 
-  def test_pick_up_passengers
-    @bus_stop.add_person(@person1)
-    @bus_stop.add_person(@person3)
-    @bus.pick_up_passengers(@bus_stop)
-    assert_equal(3, @bus.passengers.count)
-    assert_equal(0, @bus_stop.queue.count)
+  # def test_pick_up_passengers
+  #   @bus_stop.add_person(@person1)
+  #   @bus_stop.add_person(@person3)
+  #   @bus.pick_up_passengers(@bus_stop)
+  #   assert_equal(3, @bus.passengers.count)
+  #   assert_equal(0, @bus_stop.queue.count)
 
-  end
+  # end
 
 end
